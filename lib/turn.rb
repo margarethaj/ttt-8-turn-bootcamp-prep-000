@@ -22,7 +22,7 @@ def move(board, index, value = "X")
 end
 
 def valid_move?(board, index)
-  if index < board.size
+  if index < board.size && index > -1
     return false if position_taken?(board, index)
   else
     return false
